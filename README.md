@@ -56,8 +56,6 @@ runtime behavior.
 ## Deployment
 
 ```text
-1. Acquire the PhantomTag release package
-2. Launch SteamVR
-3. Start Gorilla Tag
-4. Initialize PhantomTag
-5. Runtime attaches automatically
+1. Download the file "phantommenu.dll"
+2. Move to your plugin folder via your BepinDex folder
+3. Boot up and play!
