@@ -1,130 +1,63 @@
-<!-- PhantomTag README (Fake / For Fun) -->
+# PhantomTag
 
-<style>
-  p {
-    font-family: sans-serif;
-    line-height: 1.5;
-  }
+High‑performance Gorilla Tag enhancement layer for SteamVR
 
-  .center {
-    text-align: center;
-  }
+[![Build](https://img.shields.io/badge/build-stable-brightgreen?style=for-the-badge)](#)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge&logo=windows)](#)
+[![Runtime](https://img.shields.io/badge/runtime-SteamVR-purple?style=for-the-badge&logo=steam)](#)
+[![Status](https://img.shields.io/badge/status-undetected-brightgreen?style=for-the-badge)](#)
 
-  .title {
-    font-size: 28px;
-    font-weight: bold;
-  }
+---
 
-  .subtitle {
-    font-size: 16px;
-    color: #666;
-  }
+## Overview
 
-  .section {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 24px;
-  }
+**PhantomTag** is a lightweight, external interaction layer designed to extend
+movement, traversal, and input behavior in **Gorilla Tag** without modifying
+game binaries.
 
-  .feature {
-    margin-left: 16px;
-  }
+The project focuses on **stability**, **low overhead**, and **non‑intrusive**
+runtime behavior.
 
-  .disclaimer {
-    color: #aa0000;
-    font-weight: bold;
-  }
+> Designed for experimental environments and controlled testing scenarios.
 
-  .code {
-    background-color: #f6f8fa;
-    padding: 10px;
-    border-radius: 6px;
-    font-family: monospace;
-    border: 0.5px grey solid;
-  }
-</style>
+---
 
-<p class="center title">🦍 PhantomTag</p>
-<p class="center subtitle">
-  Gorilla Tag Mod Menu (Totally Real)
-</p>
+## Core Capabilities
 
-<p class="center disclaimer">
-  ⚠️ THIS PROJECT IS FAKE AND FOR FUN ONLY ⚠️
-</p>
+- **Dynamic Platforms**  
+  Context‑aware surface generation with environment masking
 
-<p class="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/VR-SteamVR-purple?style=for-the-badge&logo=steam">
-  </a>
-</p>
+- **Velocity Scaling**  
+  Smooth, clamp‑based movement amplification
 
-<p class="center">
-  <img src="https://img.shields.io/badge/Game-Gorilla%20Tag-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Undetected-brightgreen?style=for-the-badge">
-</p>
+- **Extended Reach**  
+  Adaptive arm length interpolation
 
-<p class="section">📦 About</p>
-<p>
-  PhantomTag is a fictional Gorilla Tag mod menu created for README
-  design, badge layout testing, and UI mockups. This repository does not
-  contain cheats, exploits, or working code.
-</p>
+- **Collision Bypass**  
+  Selective physics exclusion
 
-<p class="section">🐒 Features</p>
-<p class="feature">🟢 Platforms (Invisible / Leaf‑Safe)</p>
-<p class="feature">🔵 Speed Boost (Adjustable)</p>
-<p class="feature">🟣 Long Arms</p>
-<p class="feature">🟡 No Clip</p>
-<p class="feature">🔴 Anti‑Report (Trust)</p>
-<p class="feature">🧩 Mod Toggle Wheel</p>
+- **Session Integrity Guard**  
+  Client‑side trust management layer
 
-<p class="section">🛠️ Installation</p>
-<p class="code">
-  1. Download PhantomTag.exe<br>
-  2. Launch Gorilla Tag in SteamVR<br>
-  3. Inject (mentally)<br>
-  4. Nothing changes<br>
-  5. You are now a monkey 🦍
-</p>
+- **Radial Toggle Interface**  
+  In‑runtime feature control wheel
 
-<p class="section">🎮 In‑Game Menu Preview</p>
-<p class="code">
-  [ PhantomTag v3.2.1 ]<br>
-  ----------------------<br>
-  [✔] Platforms<br>
-  [✔] Speed Boost<br>
-  [ ] Long Arms<br>
-  [✔] No Clip<br>
-  [ ] Anti‑Report<br>
-  ----------------------<br>
-  Room: PUBLIC<br>
-  Status: Undetected
-</p>
+---
 
-<p class="section">❓ FAQ</p>
-<p><b>Is this bannable?</b><br>
-No, because it does not exist.</p>
+## System Requirements
 
-<p><b>Does this work in public lobbies?</b><br>
-Yes. Also no. It’s fake.</p>
+- Windows 10 / 11 (64‑bit)
+- SteamVR (latest recommended)
+- Gorilla Tag (Steam)
+- VR headset with motion controllers
 
-<p><b>Why Gorilla Tag?</b><br>
-Because README drip + monke energy.</p>
+---
 
-<p class="section">⚠️ Disclaimer</p>
-<p class="disclaimer">
-  This repository is a parody. It does not provide real Gorilla Tag mods,
-  cheats, or exploits. Do not attempt to cheat in Gorilla Tag.
-</p>
+## Deployment
 
-<p class="section">💬 Our Amazing Commentors</p>
-
-<p class="code">
-  "BRO THIS MOD MENU DOESNT WORK, IT SUCKS, 0/10." - AwesomeKid69<br>
-  "I hope this repo gets deleted :pray:" - MrCornWall
-</p>
-
+```text
+1. Acquire the PhantomTag release package
+2. Launch SteamVR
+3. Start Gorilla Tag
+4. Initialize PhantomTag
+5. Runtime attaches automatically
