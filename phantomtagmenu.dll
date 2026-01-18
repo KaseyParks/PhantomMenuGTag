@@ -1,0 +1,12 @@
+using System;
+
+namespace PhantomTag
+{
+    public class PhantomMod
+    {
+       public void Inject()
+        {
+
+        }
+    }
+}
