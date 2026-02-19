@@ -44,18 +44,10 @@ runtime behavior.
 
 ---
 
-## System Requirements
-
-- Windows 10 / 11 (64‑bit)
-- SteamVR (latest recommended)
-- Gorilla Tag (Steam)
-- VR headset with motion controllers
-
----
-
 ## Deployment
 
 ```text
 1. Download the file "phantommenu.dll"
 2. Move to your plugin folder via your BepinDex folder
 3. Boot up and play!
+
