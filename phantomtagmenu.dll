@@ -1,12 +1,72 @@
 using System;
+using System.Collections.Generic;
 
 namespace PhantomTag
 {
     public class PhantomMod
     {
-       public void Inject()
-        {
+        private List<PhantomModule> modules = new List<PhantomModule>();
+        private bool initialized = false;
 
+        public void Inject()
+        {
+            if (initialized) return;
+            initialized = true;
+
+            InitializeModules();
+            PhantomLogger.Log("PhantomTag injected successfully.");
+        }
+
+        private void InitializeModules()
+        {
+            modules.Add(new PhantomModule("NoClip", false));
+            modules.Add(new PhantomModule("GhostMode", false));
+            modules.Add(new PhantomModule("AntiReport", true));
+            modules.Add(new PhantomModule("SilentObserver", true));
+
+            PhantomLogger.Log("Modules initialized: " + modules.Count);
+        }
+
+        public void ToggleModule(string moduleName)
+        {
+            foreach (var module in modules)
+            {
+                if (module.Name.Equals(moduleName, StringComparison.OrdinalIgnoreCase))
+                {
+                    module.Toggle();
+                    PhantomLogger.Log(module.Name + " toggled to " + module.Enabled);
+                    return;
+                }
+            }
+
+            PhantomLogger.Log("Module not found: " + moduleName);
+        }
+    }
+
+    public class PhantomModule
+    {
+        public string Name { get; private set; }
+        public bool Enabled { get; private set; }
+
+        public PhantomModule(string name, bool defaultState)
+        {
+            Name = name;
+            Enabled = defaultState;
+        }
+
+        public void Toggle()
+        {
+            Enabled = !Enabled;
+        }
+    }
+
+    public static class PhantomLogger
+    {
+        public static void Log(string message)
+        {
+            Console.WriteLine("[PhantomTag] " + message);
         }
     }
 }
+
+
