@@ -5,8 +5,7 @@ High‑performance Gorilla Tag enhancement layer for SteamVR
 [![Build](https://img.shields.io/badge/build-stable-brightgreen?style=for-the-badge)](#)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge&logo=windows)](#)
 [![Runtime](https://img.shields.io/badge/runtime-SteamVR-purple?style=for-the-badge&logo=steam)](#)
-[![Status](https://img.shields.io/badge/status-undetected-brightgreen?style=for-the-badge)](#)
-
+[![Detection](https://img.shields.io/badge/detection-undetected-brightgreen?style=for-the-badge)](#)
 ---
 
 ## Overview
@@ -48,6 +47,10 @@ runtime behavior.
 
 ```text
 1. Download the file "phantommenu.dll"
-2. Move to your plugin folder via your BepinDex folder
+2. Move to your plugin folder via your BepinEx folder
 3. Boot up and play!
+```
+
+Version 1.1
+
 
